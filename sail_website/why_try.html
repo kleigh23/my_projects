@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+<head>  
+  <title>All About Sailing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-devices-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>  
+  
+<body>
+  <div id="content">
+    <header>
+      <div class="logo-box">
+        <img src="https://cdn.glitch.global/6d69b900-b31a-4691-90d6-ba38b81fc40d/sailboat.jpg?v=1647015631994" alt="Sailboat"></div>
+         <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_sailing.html">About Sailing</a></li>
+            <li><a href="why_try.html">Why Try Sailing</a></li>
+            <li><a class="site-plan" href="site-plan.html">Site Plan</a></li>
+          </ul>
+        </nav>
+      
+    </header>
+    <main>
+      <div class="home-grid">
+        <div class="third-page-left-img">
+          <img src="https://images.unsplash.com/photo-1561654167-96680205bfdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="catamaran">
+        </div>
+        <div class="third-page-right-img">
+          <img src="https://images.unsplash.com/photo-1562442507-0fd44722e6c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="sloop">
+        </div>
+        <h2 class="third-page-headline">
+          Why Try Sailing?
+        </h2>
+        <p class="third-page-paragraph">
+          Sailing is a common tie most cultures have one to another, it is a shared experience that two cultures can share. 
+        Not to mention that it is incredibly fun. Depending on what you are 
+        interested in there is a type of sailing for that! Want a fast-paced adventure? Try racing sailing. Just want to 
+        explore? Just do some exploration sailing. Looking for a relaxing time with friends? You can just let the wind 
+        guide your sail and have the time of your life. There are numerous types of sailboats, but the most common 
+        ones to see in southeast Idaho would be the catamaran and the sloop. Catamarans have good stability, and 
+        can go really fast, this type of sailboat has two hulls connected by beams in between covered by a trampoline 
+        type floor. For advanced sailors, the Catamaran can be a thrilling ride. There are multiple kinds of sloops, 
+        we have the standard sloop. A great choice for beginners to learn the ropes of sailing and to become more 
+        comfortable on the water. This boat is also good for hanging out with a few friends and having a good time. 
+        Then we have the racing sloop, this boat can be one of the fastest sailboats in southeast Idaho. 
+        The single hull design helps the boat cut through the water with ease. This type of sailboat is 
+        best used by those who have done sailing for a bit as the design cuts stability for that increase of speed.
+          Below there is a form and if you have any information you would like to add or any question you have please fill it out and we will
+          add it to our website and/or answer your question(s)
+        </p>
+        <div id="feedback">
+          
+        </div>
+        <form action="/my-handling-form-page" method="post">
+        <ul class="ul">
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="iser_email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li>
+          <button type="submit">
+            Send Your Message
+          </button>
+        </li>
+        </ul>
+    </form>
+    <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+      });
+      </script>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022 All About Sailing - Kelley - Robertson - Section 25
+      </p>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="blank">
+          <img src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="Facebook icon"/></a>  
+        <a href="https://www.instagram.com/" target="blank">
+          <img src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="Instagram icon"/></a>
+        <a href="https://www.youtube.com/" target="blank">
+          <img src="https://cdn.glitch.global/6d69b900-b31a-4691-90d6-ba38b81fc40d/IMG_3476.jpg?v=1646847481057" alt="YouTube icon" height="65"></a>
+      </div>
+    </footer>
+  </div>
+  </body>
+  
+</html>
