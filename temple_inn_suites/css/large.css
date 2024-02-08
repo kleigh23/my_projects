@@ -1,0 +1,112 @@
+/* 64rem is also 1028px when bsaefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    /* Main */
+    .make_res {display: none;}
+    
+    .home {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .page_name {
+        grid-column: 1 / 5;
+    }
+
+    .make_res {
+        display: block;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        margin: 0;
+        width: 75%;
+        margin-left: 12%;
+    }
+
+    .calendar {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        height: 700;
+    }
+
+    .temple {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .temple_info {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+        padding: 1rem;
+    }
+
+    /* Reservation Page */
+    .reservation_page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+    }
+
+    .Form {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+
+    .laie_temple {
+        grid-column: 2 / 3;
+        padding: 1rem;
+    }
+
+    .pitt_temple {
+        grid-column: 2 / 3;
+        padding: 1rem;
+    }
+
+    .laie_img {
+        display: block;
+        border: 5px double #63474D;
+    }
+
+    .pitt_img {
+        display: block;
+        border: 5px double #63474D;
+    }
+
+    /* Service Page */
+    .service_page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .room_picture {
+        grid-column: 1 / 2;
+    }
+    
+    .pool_picture {
+        grid-column: 1 / 2;
+    }
+
+    
+    .service_list {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        text-align: left;
+        grid-column: 2 / 3;
+    }
+
+    .sub_link {
+        grid-column: 1 / 2;
+    }
+
+    /* Missionary Page */
+    .Form_missionary {
+        grid-column: 2 / 3;
+        padding: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+        
+    .gym_picture {
+        grid-column: 1 / 2;
+        margin-top: 20%;
+    }
+    
+
+}

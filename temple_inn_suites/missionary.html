@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Discription" content="Information about the temple you are visiting 
+    and other details you may want to know">
+    <title>Temple Inn & Suites</title>
+    <link rel="short cut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Edu+QLD+Beginner:wght@500&family=Libre+Franklin&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/hotel_for_temple100.png" alt="Logo"></a>
+        <div class="web_everything">
+            <h1 class="web_name">Temple Inn & Suites</h1>
+            <h2>Make Planning Easier</h2>
+        </div>
+        <span id="today"></span>
+        <div class="media_icons">
+            <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="Facebool Icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram_icon.png" alt="Instgram Icon"></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter_icon.png" alt="Twitter Icon"></a>
+        </div>
+    </header>
+    <nav>
+        <button id="hamburger"><span>&#9776;</span><span>X</span></button>
+        <ul id="normal_nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="service_page">
+            <h1 class="page_name_service">Full-Time Temple Missionary </h1>
+            
+            <picture class="room_picture">
+                <source media="(max-width: 400px)" srcset="images/bed400.jpg">
+                <source media="(max-width: 640px)" srcset="images/bed640.jpg">
+                <source media="(max-width: 900px)" srcset="images/bed900.jpg">                
+                <img class="room_img" src="images/bed900.jpg" alt="hotel room">
+            </picture>
+
+            <ul class="service_list">
+                <li>Close to temples</li>
+                <li>Public transportation to temple</li>
+                <li>Free bubble bath after long day</li>
+                <li>A copy of Johnny Lingo for each room</li>
+            </ul>
+
+            <picture class="gym_picture">
+                <source media="(max-width: 400px)" srcset="images/hotel_room_two400.jpg">
+                <source media="(max-width: 640px)" srcset="images/hotel_room_two640.jpg">
+                <source media="(max-width: 900px)" srcset="images/hotel_room_two900.jpg">                
+                <img class="pool_img" src="images/hotel_room_two900.jpg" alt="hotel room">
+            </picture>
+            
+            <div class="Form_missionary">
+                <form method="get" action="thank_you.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label class="top">Questions <input type="text" name="questions"></label>
+                    </fieldset>
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <input type="submit" value="Contact Us" class="submitBtn">
+                </form>
+            </div> 
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p>Temple Inn & Suites</p>
+            <p>4800 Montgomery Ln #300,</p>
+            <p>Bethesda, MD 20814</p>
+            <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833814,-77.0974142,16.75z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">Map</a>
+        </div>
+        <div class="img_title">
+            <img src="images/hotel_for_temple100.png" alt="Logo">
+            <p class="title">Temple Inn & Suites</p>
+        </div>
+        <div class="updates">
+            <p>Last Updated <span id="updated"></span></p>
+            <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="Facebool Icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram_icon.png" alt="Instgram Icon"></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter_icon.png" alt="Twitter Icon"></a>            
+        </div>
+    </footer>
+    <script src="js/main_script.js"></script>
+    
+</body>
+</html>
