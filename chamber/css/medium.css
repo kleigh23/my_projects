@@ -1,0 +1,66 @@
+/*35rem is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    
+    #currentDate {
+        border: 1px solid black;
+    }
+
+    .join_chamber_btn {
+        font-size: 3rem;
+    }
+
+    .spotlight1 {
+        grid-column: 1 / 5;
+        grid-row: 7 / 9;
+    }
+
+    /* .spotlight2 {
+        grid-column: 2 / 3;
+        grid-row: 7 / 9;
+    } */
+
+    .join {
+        grid-row: 9 / 11;
+    }
+
+    .event {
+        grid-column: 1 / 2;
+        grid-row: 11 / 13;
+    }
+
+    .weather {
+        grid-column: 2 / 3;
+        grid-row: 11 / 13;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 75px 1fr auto; 
+        grid-template-rows: auto;
+        font-size: large;
+    }
+
+    .title {
+        padding: .5rem;
+        text-align: left;
+    }
+
+    .map {
+        grid-column: 3 / 4;
+    }
+
+    .project_name {
+        grid-column: 2 / 3;
+    }
+
+    .discover_img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .last_visit {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+
+}

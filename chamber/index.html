@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="This home page will have infomation about events and splotlight
+    bussinesses and a few other things">
+    <title>The Gate City</title>
+    <link rel="shortcut icon" href="gate_favicon_2.0.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya+Sans&family=BenchNine&family=Overlock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/gate_square_google.webp" alt="gate logo"></a>
+        <div>
+            <h1>The Gate City Chamber of Commerce</h1>
+            <h2>Proud to Be Pocatello</h2> 
+                
+        </div>
+        <span id="currentDate"></span>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>             
+                    <ul id="primaryNav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="media_icon">
+                        <a href="https://www.facebook.com/"><img src="images/facebook_icon(1).png" alt="facebook logo"></a>
+                        <a href="https://www.instagram.com/"><img src="images/instagram_icon.png" alt="instagram_icon">,</a>
+                        <a href="https://www.twitter.com/"><img src="images/twitter_icon.png" alt="twitter_icon"></a>
+                    </div>
+                </nav> 
+    <main>
+        <h1 class="page_name">Home Page</h1>
+        <div class="hero">
+
+            <picture class="hrsrc_banner">
+                <source media="(max-width: 400px)" srcset="images/pocatello_pic400.jpg">
+                <source media="(max-width: 650px)" srcset="images/pocatello_pic650.jpg">
+                <source media="(max-width: 1800px)" srcset="images/pocatello_pic_square.jpg">
+                <img src="images/pocatello_pic_square.jpg" alt="Pocatello Picture">
+            </picture>
+            <h2 class="welcome">Welcome to Pocatello</h2>
+            <div id="message">
+                <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+                <button onclick="location.href='join.html'" class="join_chamber_btn">Join the Chamber!</button>
+            </div>
+        </div>
+        <div class="news">
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, blanditiis repellendus 
+                repellat voluptas nemo accusamus labore consequuntur ex rerum officiis non culpa ad odio. 
+                Vero tenetur dolore magni accusantium. Inventore, sequi. Facere assumenda, ipsum ut aspernatur 
+                dolorem necessitatibus earum, doloremque porro atque, placeat suscipit! Temporibus atque quos nobis ut? 
+                Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cupiditate officia id iusto 
+                enim? Delectus aliquam officia esse rerum corporis, odit enim placeat sunt dolorum ratione magnam quibusdam quia rem.</p>
+        </div>
+        <div class="spotlight1">
+            <!-- <h2>Outer Limits Fun Zone</h2>
+            <img src="images/ufo_2.0.png" alt="UFO">
+            <p>"Don't stay home get in the zone!"</p>
+            <p>(208) 232-play | <a href="https://outerlimitsfunzone.com/">website</a></p> -->
+        </div>
+        <!-- <div class="spotlight2">
+            <h2>Jeri's Jumbo</h2>
+            <img src="images/pancakes_2.0.png" alt="pancakes">
+            <p>Featured on Drivers Diners and Dives, this award winning restaurant is a local favorite!</p>
+            <p>(208) 237-2158 | <a href="https://www.jerisjumboscafe.com/?utm_source=gmb&utm_medium=referral">website</a></p>
+        </div> -->
+        <div class="join">
+            <button onclick="location.href='join.html'" class="join_button">Join us!</button>
+            <p>Discover how to join the chamber of commerce and how it will benefit your orginization!</p>
+        </div>
+        <div class="event">
+            <h2>Food Truck Rally</h2>
+            <p>Come join us for the food truck rally it happens every wednesday at 5:00pm <a href="#">more info...</a></p>
+            
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/placeholder-300x400.png" alt="logo of the weather" id="weather-icon"><h2 class="temp"><span id="tempeture"></span>&deg;</h2>
+            <div class="weather_info">
+                <h2 id="desc"></h2>
+                <div class="wind">
+                    <p>Wind Speed: <span id="speed">10</span>mph</p>
+                    <p id="chill">Wind Chill: N/A</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <picture class="footer_logo">
+            <img src="images/gate_square_2.0google75.webp" alt="gate logo">
+        </picture> 
+        <div class="title">
+            <p>The Gate City</p>
+            <p>Address line 1</p>
+            <p>Pocatello, ID 83202</p>
+        </div>
+        <div class="email">
+            <p>email@address.org</p>
+            <p>+(223)555-1234</p>
+        </div>
+        <div class="map">
+            <a href="https://www.google.com/maps/place/Pocatello,+ID/@42.8687025,-112.5660482,12z/data=!3m1!4b1!4m5!3m4!1s0x53554f20d5d09b0d:0x70c6a2484ce39b0!8m2!3d42.8621042!4d-112.4506191">Link to Map</a>
+        </div>
+        <div class="project_name">
+            <p>&copy;<span id="year"></span> The Gate Chamber | Kelley Robertson | WDD 230 Project | Last Modification: <span id="currentdate"></span>
+        </div>
+    </footer>
+    <script src="js/current_date.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
+</body>
+</html>
